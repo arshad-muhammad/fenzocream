@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FENZO | Haute Bio-Active Facial Cream & Skincare</title>
+  <meta name="description" content="Cellular barrier renewal, bio-identical peptide collagen infusion, and 72-hour deep hydration. Experience Fenzo luxury clinical facial creams." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="FENZO | Haute Bio-Active Facial Cream" />
+  <meta property="og:description" content="Clinical-grade facial creams engineered for deep cellular hydration, barrier restoration, and youthful radiance." />
+  <meta property="og:image" content="images/hero-cream.jpg" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/hero-cream.jpg" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fenzo.css" />
+</head>
+<body>
+
+  <!-- ==================== 1. FLOATING LIQUID GLASS NAVBAR ==================== -->
+  <div class="fenzo-floating-nav-wrap">
+    <header class="fenzo-floating-nav">
+      
+      <!-- Brand Logo with Red Dot -->
+      <a href="#hero" class="fenzo-logo-link" title="FENZO Skincare">
+        <span>FENZO</span>
+        <span class="fenzo-logo-dot"></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="fenzo-nav-links">
+        <a href="#products" class="fenzo-nav-link">The Creams</a>
+        <a href="#stats" class="fenzo-nav-link">Foundations</a>
+        <a href="#science" class="fenzo-nav-link">Clinical Science</a>
+        <a href="#manifesto" class="fenzo-nav-link">Manifesto</a>
+        <a href="#reviews" class="fenzo-nav-link">Results</a>
+        <a href="#faq" class="fenzo-nav-link">FAQ</a>
+      </nav>
+
+      <!-- Nav Actions (Bag + Mobile Toggle) -->
+      <div style="display: flex; align-items: center; gap: 0.45rem;">
+        <button class="fenzo-cart-badge-btn" data-open-cart="true" aria-label="Open Shopping Bag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Bag</span>
+          <span class="fenzo-cart-badge-count" data-cart-count="true">1</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="fenzo-mobile-toggle" class="fenzo-mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </header>
+  </div>
+
+  <!-- Floating Liquid Glass Mobile Menu Dropdown -->
+  <div id="fenzo-mobile-menu" class="fenzo-mobile-menu" aria-label="Mobile Navigation">
+    <a href="#products" class="mobile-nav-link"><span>The Creams</span><span>→</span></a>
+    <a href="#stats" class="mobile-nav-link"><span>Foundations</span><span>→</span></a>
+    <a href="#science" class="mobile-nav-link"><span>Clinical Science</span><span>→</span></a>
+    <a href="#manifesto" class="mobile-nav-link"><span>Manifesto</span><span>→</span></a>
+    <a href="#reviews" class="mobile-nav-link"><span>Results</span><span>→</span></a>
+    <a href="#faq" class="mobile-nav-link"><span>FAQ</span><span>→</span></a>
+  </div>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section id="hero" class="fenzo-hero-section">
+    
+    <!-- Pill Badge with Glowing Red Pulse -->
+    <div class="hero-pill-badge fenzo-reveal">
+      <span class="red-dot"></span>
+      <span>100% Bio-Active • Dermatologist Tested • 72H Barrier Lock</span>
+    </div>
+
+    <!-- Hero Title -->
+    <div class="hero-title-wrap">
+      <h1 class="hero-title-line">CELLULAR REPAIR.</h1>
+      <h1 class="hero-title-line red-accent">PURE HYDRATION.</h1>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="hero-subtitle-text fenzo-reveal">
+      Clinical-grade facial creams engineered with multi-molecular hyaluronic acid, bio-identical peptides, and essential ceramides for velvety, ageless, and deeply nourished skin.
+    </p>
+
+    <!-- Hero Cream Showcase (GSAP Scroll-Triggered Parallax) -->
+    <div class="hero-cream-showcase">
+      <div class="hero-cream-halo"></div>
+      <div class="hero-cream-img-frame">
+        <img 
+          src="images/hero-cream.jpg" 
+          alt="FENZO Luxury Bio-Active Facial Cream Jar" 
+          class="hero-cream-img"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <!-- CTA Buttons with Red Wow Accent -->
+    <div class="hero-cta-group fenzo-reveal">
+      <a href="#products" class="btn-fenzo-primary">
+        <span>Explore Collection</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </a>
+      <a href="#science" class="btn-fenzo-secondary">Clinical Science</a>
+    </div>
+
+    <!-- Scroll Down Cue -->
+    <a href="#products" class="hero-scroll-cue fenzo-reveal" aria-label="Scroll to explore collection">
+      <span>Scroll to explore</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+    </a>
+
+  </section>
+
+  <!-- ==================== 3. INFINITE MARQUEE TICKER ==================== -->
+  <div class="fenzo-marquee-wrap">
+    <div class="fenzo-marquee-track">
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 72H EPIDERMAL MOISTURE RESERVOIR</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> BIO-IDENTICAL PEPTIDE COMPLEX</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 5-CERAMIDE LIPID ARCHITECTURE</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> DERMATOLOGIST FORMULATED</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 100% CLEAN & CRUELTY-FREE</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> VELVET-DEW GLASS SKIN FINISH</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> NON-COMEDOGENIC ZERO FILLERS</div>
+      <!-- Duplicate track for seamless infinite loop -->
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 72H EPIDERMAL MOISTURE RESERVOIR</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> BIO-IDENTICAL PEPTIDE COMPLEX</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 5-CERAMIDE LIPID ARCHITECTURE</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> DERMATOLOGIST FORMULATED</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> 100% CLEAN & CRUELTY-FREE</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> VELVET-DEW GLASS SKIN FINISH</div>
+      <div class="fenzo-marquee-item"><span class="star">✦</span> NON-COMEDOGENIC ZERO FILLERS</div>
+    </div>
+  </div>
+
+  <!-- ==================== 4. FOUNDATIONS / 3 CORE PRINCIPLES ==================== -->
+  <section id="stats" class="fenzo-stats-section">
+    <div class="fenzo-stats-grid">
+      
+      <div class="fenzo-stat-card fenzo-reveal">
+        <div class="fenzo-stat-num">01 / BARRIER RETENTION</div>
+        <h3 class="fenzo-stat-title">72-Hour Depth</h3>
+        <p class="fenzo-stat-desc">
+          Engineered with five molecular weights of hyaluronic acid to build an unbroken moisture reservoir across every layer of the epidermis.
+        </p>
+      </div>
+
+      <div class="fenzo-stat-card fenzo-reveal">
+        <div class="fenzo-stat-num">02 / LIPID RECONSTRUCTION</div>
+        <h3 class="fenzo-stat-title">5 Bio-Ceramides</h3>
+        <p class="fenzo-stat-desc">
+          Bio-identical NP, AP, and EOP ceramides seamlessly interlock into damaged lipid bilayers to halt transepidermal water loss.
+        </p>
+      </div>
+
+      <div class="fenzo-stat-card fenzo-reveal">
+        <div class="fenzo-stat-num">03 / CLINICAL PURITY</div>
+        <h3 class="fenzo-stat-title">0% Irritants</h3>
+        <p class="fenzo-stat-desc">
+          Hypoallergenic and fragrance-free. Strictly free of silicones, parabens, sulfates, and pore-clogging heavy mineral waxes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. PRODUCT CAROUSEL & SLIDER ==================== -->
+  <section id="products" class="fenzo-products-section">
+    
+    <div class="fenzo-section-header fenzo-reveal">
+      <span class="fenzo-eyebrow">The Facial Cream Collection</span>
+      <h2 class="fenzo-heading">Targeted Formulas for Every Skin Need</h2>
+      <p class="fenzo-subheading">
+        Every Fenzo formulation is concentrated with pure active botanicals and bio-engineered actives to restore your skin's natural lipid barrier.
+      </p>
+    </div>
+
+    <!-- Product Switcher Tabs -->
+    <div class="fenzo-product-tabs fenzo-reveal">
+      <button class="fenzo-tab-btn is-active" data-product-tab="hydra-luxe">Hydra-Luxe Cream</button>
+      <button class="fenzo-tab-btn" data-product-tab="peptide-radiance">Peptide Radiance</button>
+      <button class="fenzo-tab-btn" data-product-tab="botanical-night">Botanical Night</button>
+      <button class="fenzo-tab-btn" data-product-tab="radiance-trio">The Radiance Trio</button>
+    </div>
+
+    <!-- Active Product Card Showcase -->
+    <div class="fenzo-product-card-wrap fenzo-reveal">
+      
+      <!-- Product Image Column -->
+      <div class="fenzo-product-img-box">
+        <span class="fenzo-product-badge" id="fenzo-product-badge">Best For Dehydrated Skin</span>
+        <img 
+          id="fenzo-featured-img" 
+          src="images/cream-hydra.jpg" 
+          alt="FENZO Hydra-Luxe Facial Cream with packaging box"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Product Info Column -->
+      <div class="fenzo-product-details">
+        <span class="fenzo-product-cat" id="fenzo-product-category">Deep Barrier Defense</span>
+        <h3 class="fenzo-product-name" id="fenzo-product-title">Hydra-Luxe Recovery Cream</h3>
+
+        <!-- Price & Star Rating -->
+        <div class="fenzo-product-price-row">
+          <span class="fenzo-product-price" id="fenzo-product-price">$54.00</span>
+          <div class="fenzo-stars">
+            ★★★★★
+            <span class="count">(1,248 reviews)</span>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <p class="fenzo-product-description" id="fenzo-product-desc">
+          A transformative, velvety daily moisture cream powered by 5 bio-identical ceramides, multi-depth hyaluronic acid, and botanical squalane. Restores the lipid moisture barrier and plumps fine lines without any greasy residue.
+        </p>
+
+        <!-- Key Benefits -->
+        <ul class="fenzo-benefits-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Instant 72-Hour Epidermal Hydration Lock</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Reinforces Compromised & Sensitive Skin Barrier</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Dermatologist Tested • Non-Comedogenic • Fragrance Free</span>
+          </li>
+        </ul>
+
+        <!-- Quantity & Add to Bag -->
+        <div class="fenzo-actions-row">
+          <div class="fenzo-qty-picker">
+            <button class="fenzo-qty-btn" id="fenzo-qty-minus" aria-label="Decrease quantity">−</button>
+            <span class="fenzo-qty-num" id="fenzo-product-qty">1</span>
+            <button class="fenzo-qty-btn" id="fenzo-qty-plus" aria-label="Increase quantity">+</button>
+          </div>
+          
+          <button class="btn-add-bag" id="fenzo-add-to-bag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>Add to Bag</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================== 6. CLINICAL SCIENCE & INGREDIENTS ==================== -->
+  <section id="science" class="fenzo-science-section">
+    
+    <div class="fenzo-section-header fenzo-reveal">
+      <span class="fenzo-eyebrow">Pure Bio-Active Formulation</span>
+      <h2 class="fenzo-heading">Clinical Potency. Cellular Nutrition.</h2>
+      <p class="fenzo-subheading">
+        Formulated at clinical thresholds with zero fillers, silicones, synthetic dyes, or harsh preservatives. Pure cellular nourishment for visible skin longevity.
+      </p>
+    </div>
+
+    <!-- 4 Active Ingredients Grid -->
+    <div class="fenzo-science-grid">
+      
+      <div class="fenzo-ingredient-card fenzo-reveal">
+        <div class="ingredient-num">01 / MOISTURE RESERVOIR</div>
+        <h4 class="ingredient-title">Multi-Molecular Hyaluronic Acid</h4>
+        <p class="ingredient-desc">
+          Five molecular weights penetrate from the surface stratum corneum down to deep dermal layers, creating a continuous 72-hour internal moisture reservoir.
+        </p>
+      </div>
+
+      <div class="fenzo-ingredient-card fenzo-reveal">
+        <div class="ingredient-num">02 / COLLAGEN SYNTHESIS</div>
+        <h4 class="ingredient-title">Bio-Identical Copper Peptides</h4>
+        <p class="ingredient-desc">
+          Signals natural fibroblast activity to promote collagen and elastin production, visibly improving dermal density, contour firmness, and bounce.
+        </p>
+      </div>
+
+      <div class="fenzo-ingredient-card fenzo-reveal">
+        <div class="ingredient-num">03 / BARRIER ARCHITECTURE</div>
+        <h4 class="ingredient-title">Ceramide Complex (NP, AP, EOP)</h4>
+        <p class="ingredient-desc">
+          Mimics the intercellular lipid matrix of healthy skin, sealing moisture fissures, stopping transepidermal water loss, and defending against pollutants.
+        </p>
+      </div>
+
+      <div class="fenzo-ingredient-card fenzo-reveal">
+        <div class="ingredient-num">04 / PHYTO-RENEWAL</div>
+        <h4 class="ingredient-title">Cold-Pressed Squalane & Bakuchiol</h4>
+        <p class="ingredient-desc">
+          Plant-derived lipid nutrition paired with gentle botanical retinol alternative. Accelerates cell turnover overnight with zero irritation or redness.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Texture & Model Split Feature -->
+    <div class="fenzo-clinical-split fenzo-reveal">
+      
+      <div class="fenzo-split-card">
+        <img 
+          src="images/cream-texture.jpg" 
+          alt="FENZO luxurious velvety cream texture swatch" 
+          class="fenzo-split-img"
+          loading="lazy"
+        />
+        <div class="fenzo-split-content">
+          <h4 class="fenzo-split-title">The Velvet-Dew Formula</h4>
+          <p class="fenzo-split-text">
+            Rich, cushioning hydration that melts effortlessly upon contact with skin temperature. Absorbs in seconds leaving an ungreasy, velvety matte glow that primes perfectly under makeup or bare skin.
+          </p>
+        </div>
+      </div>
+
+      <div class="fenzo-split-card">
+        <img 
+          src="images/skincare-model.jpg" 
+          alt="Woman with radiant dewy glass skin holding FENZO cream jar" 
+          class="fenzo-split-img"
+          loading="lazy"
+        />
+        <div class="fenzo-split-content">
+          <h4 class="fenzo-split-title">Clinically Proven Results</h4>
+          <p class="fenzo-split-text">
+            In an independent 28-day clinical trial on 120 subjects: 99% experienced immediate barrier soothing, 96% measured improved skin firmness, and 94% reported smoother skin texture.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================== 7. THE BOLD MANIFESTO STATEMENT ==================== -->
+  <section id="manifesto" class="fenzo-manifesto-section">
+    <div class="manifesto-bg-glow"></div>
+    <div class="manifesto-inner">
+      <span class="manifesto-eyebrow fenzo-reveal">THE FENZO CREED</span>
+      <h2 class="manifesto-headline">
+        PURE POTENCY.<br />
+        <span class="red-word">CELLULAR PRECISION.</span><br />
+        UNCOMPROMISING.
+      </h2>
+      <p class="manifesto-p fenzo-reveal">
+        We reject synthetic fillers, cosmetic compromises, and empty marketing promises. Every Fenzo facial cream is formulated at active clinical concentrations to fundamentally renew your skin barrier from within.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 8. THE SHOWSTOPPING RED SECTION ==================== -->
+  <section id="reviews" class="fenzo-red-section">
+    <div class="red-section-decor-glow"></div>
+    <div class="red-section-inner">
+      
+      <div class="red-section-header fenzo-reveal">
+        <span class="red-section-eyebrow">Verified Clinical Proof</span>
+        <h2 class="red-section-title">Dermatologist Endorsed. Real Transformation.</h2>
+        <p class="red-section-subtitle">
+          Read genuine experiences from board-certified dermatologists, aesthetic editors, and verified customers.
+        </p>
+      </div>
+
+      <!-- Liquid Glass Reviews Grid -->
+      <div class="fenzo-glass-reviews-grid">
+        
+        <div class="fenzo-glass-card">
+          <div>
+            <div class="glass-stars">★★★★★</div>
+            <p class="glass-quote">
+              "The barrier repair capability of Hydra-Luxe is extraordinary. I recommend it to patients recovering from chemical peels, retinol sensitivity, or chronic dehydration. It calms redness within minutes."
+            </p>
+          </div>
+          <div class="glass-reviewer-meta">
+            <div class="glass-avatar">EV</div>
+            <div class="glass-reviewer-info">
+              <h5>Dr. Elena Vance, MD</h5>
+              <p>Board-Certified Dermatologist, NYC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fenzo-glass-card">
+          <div>
+            <div class="glass-stars">★★★★★</div>
+            <p class="glass-quote">
+              "The Cellular Peptide Radiance Cream is my holy grail daytime moisturizer. It gives that enviable lit-from-within glass skin finish without feeling heavy. Fine lines around my eyes softened dramatically."
+            </p>
+          </div>
+          <div class="glass-reviewer-meta">
+            <div class="glass-avatar">ST</div>
+            <div class="glass-reviewer-info">
+              <h5>Sophia Thorne</h5>
+              <p>Senior Beauty & Wellness Director</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fenzo-glass-card">
+          <div>
+            <div class="glass-stars">★★★★★</div>
+            <p class="glass-quote">
+              "Finally a restorative night cream that does not trigger breakouts. The Botanical Night Infusion resets tired, stressed skin overnight. I wake up with calm, plump, deeply nourished skin."
+            </p>
+          </div>
+          <div class="glass-reviewer-meta">
+            <div class="glass-avatar">MR</div>
+            <div class="glass-reviewer-info">
+              <h5>Marcus Reed</h5>
+              <p>Clinical Aesthetic Practitioner</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 9. FAQ ACCORDION ==================== -->
+  <section id="faq" class="fenzo-faq-section">
+    
+    <div class="fenzo-section-header fenzo-reveal">
+      <span class="fenzo-eyebrow">Clear Answers</span>
+      <h2 class="fenzo-heading">Frequently Asked Questions</h2>
+      <p class="fenzo-subheading">
+        Everything you need to know about our facial cream formulas, clean ingredients, and application ritual.
+      </p>
+    </div>
+
+    <div class="fenzo-faq-container fenzo-reveal">
+      
+      <div class="fenzo-faq-item">
+        <button class="fenzo-faq-q">
+          <span>Is Fenzo Facial Cream suitable for sensitive, acne-prone skin?</span>
+          <div class="faq-icon-cross"></div>
+        </button>
+        <div class="fenzo-faq-a">
+          <p>
+            Yes, absolutely. All Fenzo creams are non-comedogenic, hypoallergenic, dermatologist-tested, and formulated without pore-clogging mineral oils, synthetic fragrances, parabens, or drying alcohols. They are safe for reactive, eczema-prone, and blemish-prone skin.
+          </p>
+        </div>
+      </div>
+
+      <div class="fenzo-faq-item">
+        <button class="fenzo-faq-q">
+          <span>How and when should I apply Fenzo creams in my skincare routine?</span>
+          <div class="faq-icon-cross"></div>
+        </button>
+        <div class="fenzo-faq-a">
+          <p>
+            Warm a pea-sized amount between clean fingertips and gently press and smooth upwards across your cleansed face, neck, and décolletage. Use <strong>Hydra-Luxe</strong> or <strong>Peptide Radiance</strong> in the morning after serum, and <strong>Botanical Night Infusion</strong> as the final restorative step before sleep.
+          </p>
+        </div>
+      </div>
+
+      <div class="fenzo-faq-item">
+        <button class="fenzo-faq-q">
+          <span>How quickly can I expect to see visible clinical results?</span>
+          <div class="faq-icon-cross"></div>
+        </button>
+        <div class="fenzo-faq-a">
+          <p>
+            Instant hydration, plumping, and surface smoothness appear within 15 minutes of first application. Clinically measurable skin barrier reinforcement, increased elasticity, and diminished fine lines typically emerge between 14 and 28 days of regular daily use.
+          </p>
+        </div>
+      </div>
+
+      <div class="fenzo-faq-item">
+        <button class="fenzo-faq-q">
+          <span>Are Fenzo facial creams cruelty-free, vegan, and clean?</span>
+          <div class="faq-icon-cross"></div>
+        </button>
+        <div class="fenzo-faq-a">
+          <p>
+            Yes. We are 100% Leaping Bunny certified cruelty-free and certified vegan. Our luxurious heavy jars are crafted from recyclable frosted glass, and our paper packaging uses sustainably sourced FSC-certified materials.
+          </p>
+        </div>
+      </div>
+
+      <div class="fenzo-faq-item">
+        <button class="fenzo-faq-q">
+          <span>How does the Fenzo replenishment subscription service work?</span>
+          <div class="faq-icon-cross"></div>
+        </button>
+        <div class="fenzo-faq-a">
+          <p>
+            Subscribing saves you 15% on every shipment and includes complimentary express delivery. You can choose to receive your favorite cream every 30, 45, or 60 days. You can pause, skip, or cancel anytime with one click directly in your account.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================== 10. NEWSLETTER VIP BANNER ==================== -->
+  <section id="newsletter" class="fenzo-newsletter-section">
+    <div class="fenzo-newsletter-inner fenzo-reveal">
+      <span class="fenzo-eyebrow">The Fenzo Circle</span>
+      <h2 class="fenzo-heading" style="font-size: clamp(1.75rem, 2.6vw, 2.25rem);">Unlock 15% Off Your First Ritual Order</h2>
+      <p class="fenzo-subheading">
+        Subscribe to receive dermatological skincare guides, clinical trial reports, and priority access to limited batch releases.
+      </p>
+      
+      <form class="fenzo-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for joining the Fenzo Inner Circle. Your 15% welcome code is FENZO15');">
+        <input 
+          type="email" 
+          placeholder="Enter your email address..." 
+          class="fenzo-newsletter-input" 
+          required 
+        />
+        <button type="submit" class="btn-newsletter-submit">
+          Join VIP Circle
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== 11. HYPER-MODERN EDITORIAL FOOTER ==================== -->
+  <footer id="contact" class="fenzo-footer">
+    <div class="fenzo-footer-inner">
+      
+      <div class="fenzo-footer-top">
+        
+        <div class="fenzo-footer-brand">
+          <h3>
+            <span>FENZO</span>
+            <span class="fenzo-logo-dot"></span>
+          </h3>
+          <p>
+            High-performance bio-active facial creams formulated to strengthen your cellular barrier and unlock luminous, youthful skin longevity.
+          </p>
+          <div class="footer-lab-locations">
+            <span class="lab-pill">NYC LAB</span>
+            <span class="lab-pill">PARIS CLINICAL</span>
+            <span class="lab-pill">ZÜRICH BIO-ACTIVES</span>
+          </div>
+        </div>
+
+        <div class="fenzo-footer-col">
+          <h4>The Creams</h4>
+          <ul>
+            <li><a href="#products">Hydra-Luxe Recovery</a></li>
+            <li><a href="#products">Peptide Radiance Cream</a></li>
+            <li><a href="#products">Botanical Night Infusion</a></li>
+            <li><a href="#products">The Discovery Trio</a></li>
+          </ul>
+        </div>
+
+        <div class="fenzo-footer-col">
+          <h4>Clinical Science</h4>
+          <ul>
+            <li><a href="#science">Bio-Identical Actives</a></li>
+            <li><a href="#science">Ceramide Bilayer Matrix</a></li>
+            <li><a href="#reviews">Dermatologist Trials</a></li>
+            <li><a href="#manifesto">The Fenzo Creed</a></li>
+          </ul>
+        </div>
+
+        <div class="fenzo-footer-col">
+          <h4>Standards</h4>
+          <ul>
+            <li><a href="#hero">100% Leaping Bunny Vegan</a></li>
+            <li><a href="#hero">Non-Comedogenic Purity</a></li>
+            <li><a href="#hero">FSC Recyclable Glass</a></li>
+            <li><a href="#faq">Replenishment Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Gigantic Architectural FENZO Watermark -->
+      <div class="fenzo-footer-watermark">
+        FENZO
+      </div>
+
+      <div class="fenzo-footer-bottom">
+        <div>© 2026 FENZO Skincare Laboratories Inc. All rights reserved.</div>
+        <div>Formulated with Bio-Identical Actives • Clean Clinical Luxury</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== 12. MINI-CART DRAWER ==================== -->
+  <div id="fenzo-cart-backdrop" class="fenzo-cart-backdrop"></div>
+  
+  <aside id="fenzo-cart-drawer" class="fenzo-cart-drawer" aria-label="Shopping Bag">
+    
+    <!-- Drawer Header -->
+    <div class="cart-header">
+      <h3 class="cart-header-title">Your Bag</h3>
+      <button id="fenzo-cart-close" class="cart-close-btn" aria-label="Close Shopping Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="cart-shipping-bar">
+      <div id="fenzo-shipping-text" class="shipping-bar-text">
+        Add <strong>$21.00</strong> more for complimentary express delivery.
+      </div>
+      <div class="shipping-bar-track">
+        <div id="fenzo-shipping-progress" class="shipping-bar-fill" style="width: 72%;"></div>
+      </div>
+    </div>
+
+    <!-- Items List -->
+    <div id="fenzo-cart-items-list" class="cart-items-container">
+      <!-- Items dynamically populated by fenzo.js -->
+    </div>
+
+    <!-- Empty State Message -->
+    <div id="fenzo-cart-empty-state" style="display: none; padding: 3rem 1.75rem; text-align: center; color: var(--fenzo-muted);">
+      <p style="font-size: 1rem; margin-bottom: 1.5rem;">Your shopping bag is currently empty.</p>
+      <a href="#products" class="btn-fenzo-primary" onclick="document.getElementById('fenzo-cart-close').click();">
+        Discover The Creams
+      </a>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span class="cart-subtotal-label">Estimated Total</span>
+        <span id="fenzo-cart-subtotal" class="cart-subtotal-val">$54.00</span>
+      </div>
+      <button id="fenzo-checkout-btn" class="btn-checkout">
+        Proceed to Secure Checkout
+      </button>
+      <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--fenzo-muted);">
+        🔒 256-bit encrypted checkout • 30-day money-back guarantee
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ==================== LIBRARIES & SCRIPTS ==================== -->
+  <!-- GSAP 3.12 + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- FENZO High-Performance Runtime -->
+  <script src="fenzo.js"></script>
+
+</body>
+</html>
